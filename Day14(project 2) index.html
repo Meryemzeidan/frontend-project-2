@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Personal Portfolio Website</title>
+  <style>
+    .flex{
+      display:flex;
+      justify-content: space-between;
+        gap :20px;
+    }
+    .contact-btn:hover{
+      background-color: lightblue;
+      transform: scale(1.1);
+    .contact-btn{
+      transition: all 0.5s;
+    }
+      transition: 1.5s;
+    }
+    @media (max-width:600px){
+    .grid{
+        grid-template-columns:1fr;
+    }
+}
+    .box{
+      border:2px solid black;
+      border-radius: 40px;
+      margin: 2px;
+      padding: 20px;
+      box-shadow: 5px 5px 10px black;
+    }
+    .box:hover{
+      transform: scale(1.05);
+      background-color:hwb(350 66% 7%);
+    }
+    @media (max-width:600px){
+    .flex{
+        flex-direction:column;
+        align-items: center;
+    }
+    .color:hover{
+      background-color: lightblue;
+      transition: 0.9s;
+    }
+    }
+    </style>
+  </head>
+  <body class="color">
+    <header>
+      <h1>meru ,hi everyone</h1>
+    </header>
+    <nav class="flex">
+      <a href="#">home</a>
+      <a href="#">About</a>
+      <a href="#">skills</a>
+      <a href="#">projects</a>
+      <a href="#">contact</a>
+    </nav>
+    <section>
+      <h2>Telling about my final HTML& CSS project</h2>
+      <p>welcome everyone</p>
+      <button class="Contact-btn">Contact Me</button>
+    </section>
+    <h3>About Me</h3>
+    <p>i'm meru</p>
+    <p>i'm learning html, css and javascript</p>
+    <p>my future plan is becoming full stack developer</p>
+    <h3>My Skills</h3>
+    <div class="grid">
+      <div class="box">HTML</div>
+      <div class="box">CSS</div>
+      <div class="box">JavaScript</div>
+      <div class="box">Python</div>
+      <div class="box">Git</div>
+      <div class="box">GitHub</div>
+    </div>
+    <h3>My projects</h3>
+    <div class="box">
+      <div>
+        <h2>Registration Form</h2>
+        <p>used to Registration</p>
+        <button>View Project</button>
+      </div>
+      <div>
+        <h2>Responsive Website</h2>
+        <p>it's responsive website</p>
+        <button>View Project</button>
+      </div>
+      <div>
+        <h2>Portfolio Website</h2>
+        <p>it's website which has my profile</p>
+        <button>View Profile</button>
+      </div>
+      <div>
+        <h2>Python Calculator</h2>
+        <p>it's Calculator build with python language</p>
+        <button>View Profile</button>
+      </div>
+    </div>
+    <h3>Contact</h3>
+    <form>
+      <label>name</label>
+      <input 
+      type="text"
+      placeholder="enter your name">
+      <br> <br>
+      <label>Email</label>
+      <input 
+      type="email"
+      placeholder="enter your email">
+      <br> <br>
+      <label>subject</label>
+      <input 
+      type="text"
+      placeholder="enter your subject">
+      <br> <br>
+      <label>message</label>
+      <textarea placeholder="enter your message"></textarea>
+      <br> <br>
+      <button>Submit</button>
+    </form>
+    <footer>
+      <p>Made by Meru © 2026</p>
+      <a href="#">social link</a>
+    </footer>
+  </body>
+</html>
